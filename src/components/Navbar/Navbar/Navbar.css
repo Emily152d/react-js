@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: black; 
+    padding:10px 20px;
+}
+
+.navbar-logo{
+    color: pink; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
