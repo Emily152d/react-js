@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Playtation 5",
+        "price": 500,
+        "stock": 37,
+        "image": "/assets/img/consola.jpg",
+        "category": "Sony",
+        "description": "Consola de videojuegos de ultima generacion"
+    },
+    {
+        "Id": 2,
+        "name": "Xbox Series X",
+        "price": 500,
+        "stock": 37,
+        "image": "/assets/img/consola.jpg",
+        "category": "Microsoft",
+        "description": "Consola de videojuegos de ultima generacion"
+    },
+    {
+        "Id": 3,
+        "name": "Nintendo Switch",
+        "price": 500,
+        "stock": 37,
+        "image": "/assets/img/consola.jpg",
+        "category": "Nintendo",
+        "description": "Consola de videojuegos de ultima generacion"
+    }
+]
