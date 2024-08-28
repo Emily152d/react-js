@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Spinner from '../Spinner/Spinner';
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState("");  
+    const [product, setProduct] = useState(null);  
 
     const { id } = useParams();
 
@@ -13,20 +13,20 @@ const ItemDetailContainer = () => {
             try {
                 const response = await fetch('/productos.json');
                 const data = await response.json();
-                const newProduct = data.find(p => p.Id === Number(id));
+                const newProduct = data.find(p => p.id === Number(id));
                 setProduct(newProduct);
             }catch(error){
                 console.log(error);
             }
         }
-        fetchData()
-    },[])
+        fetchData();
+    }, [id]);
 
     return (
         <div>
-            {product == undefined ? <Spinner/> : <ItemDetail product={product}/>}
+            {product === null ? <Spinner/> : <ItemDetail product={product}/>}
         </div>
-    )
+    );
 }
 
 export default ItemDetailContainer;
