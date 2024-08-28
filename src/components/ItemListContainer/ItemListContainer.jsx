@@ -21,7 +21,6 @@ const ItemListContainer = ({ greeting }) => {
                 const filter = categoryId ? data.filter((p) => p.category === categoryId) : data;
                 setProducts(filter);
 
-
             }catch(error){
                 console.log(error);
             }finally{
