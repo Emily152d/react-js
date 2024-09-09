@@ -1,8 +1,28 @@
-# React + Vite
+# Proyecto React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Author
+Emily Dunca Monge
+- Portafolio: https://github.com/Emily152d/react-js.git
+- Linkedin: https://www.linkedin.com/in/emily-duncan-ab306a249/
 
-Currently, two official plugins are available:
+## Description
+This project is the result of the work carried out throughout my course, in which I developed an e-commerce platform focused on selling video game consoles. The main goal is to offer users a smooth and attractive shopping experience, with access to a wide variety of consoles, detailed information about each product, and an easy and intuitive purchase process.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Through this project, I have applied the knowledge acquired about web development, using React to build a modern and responsive interface. I also implemented key functionalities such as product management, shopping cart, and payment simulation, integrating good development practices and state management.
+
+## Instalation
+
+**Clone the repository**:
+```bash
+git clone https://github.com/Emily152d/react-js.git
+cd ReactProyect
+```
+**Install dependencies**:
+```bash 
+npm install
+```
+**Run the development server**:
+```bash
+npm run dev
+```
+**Open your browser and navigate to http://localhost:5176/ to see the application in action.**:

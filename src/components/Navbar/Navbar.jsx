@@ -12,14 +12,30 @@ export const Navbar = () => {
             <div className="navbar-container">
                 <ul className="navbar-links">
                     <li>
-                        <Link to="/category/Sony" className="link">Sony</Link>
+                        <NavLink
+                            to="/category/Sony"
+                            className={({ isActive }) => (isActive ? "link active" : "link")}
+                        >
+                            Sony
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/category/Nintendo Switch" className="link">Microsoft</Link>
+                        <NavLink
+                            to="/category/Microsoft"
+                            className={({ isActive }) => (isActive ? "link active" : "link")}
+                        >
+                            Microsoft
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/category/Xbox" className="link">Nintendo</Link>
+                        <NavLink
+                            to="/category/Nintendo"
+                            className={({ isActive }) => (isActive ? "link active" : "link")}
+                        >
+                            Nintendo
+                        </NavLink>
                     </li>
+
                 </ul>
             </div>
             <div className="navbar-cart">

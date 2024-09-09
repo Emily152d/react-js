@@ -1,14 +1,17 @@
-import React from 'react';
-import "./CartWidget.css";
-import { FaCartPlus } from "react-icons/fa";
+import React, { useContext } from 'react';
+import { CartContext } from '../../context/CartContext/CartProvider';
+import { FaCartPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {  
+    const { getTotalProducts } = useContext(CartContext);
+
     return (
-        <div className="nav-cart">
-            <p>5</p>
+        <Link to={"/cart"} className="nav-cart">
             <FaCartPlus />
-        </div>
+            {getTotalProducts() === 0 ? null : getTotalProducts()}
+        </Link>
     );
 };
 
-export default CartWidget;  
+export default CartWidget;

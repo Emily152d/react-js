@@ -1,32 +1,29 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-const ItemCount = ({ stock }) => {
-    const [count, setCount] = useState(1);
+const ItemCount = ({ initial, stock, onAdd }) => {
+    const [count, setCount] = useState(initial);
 
     const decrement = () => {
-        if (count > 1) {
+        if (count > initial) {
             setCount(count - 1);
         }
-    }
+    };
+
     const increment = () => {
-        if (count <stock) {
+        if (count < stock) {
             setCount(count + 1);
         }
-    }
-    const addToCart = () => {
-        alert(`Se agregaron ${count} items al carrito`);
-    }
-
+    };
 
     return (
         <div>
             <button onClick={decrement}>Decrementar</button>
+            <p>{count}</p>
             <button onClick={increment}>Incrementar</button>
-            <button onClick={addToCart}>Agregar al carrito</button>
+            <button onClick={() => onAdd(count)}>Agregar al carrito</button>
+            <span style={{ margin: '0px 0px 0px 10px' }}>Qty: {count}</span>
+        </div>
+    );
+};
 
-            <span style={{margin: "0px 0px 0px 10px"}}>Qty: {count}</span>
-        </div >
-    )
-}
-
-export default ItemCount
+export default ItemCount;
