@@ -6,9 +6,7 @@ Emily Dunca Monge
 - Linkedin: https://www.linkedin.com/in/emily-duncan-ab306a249/
 
 ## Description
-This project is the result of the work carried out throughout my course, in which I developed an e-commerce platform focused on selling video game consoles. The main goal is to offer users a smooth and attractive shopping experience, with access to a wide variety of consoles, detailed information about each product, and an easy and intuitive purchase process.
-
-Through this project, I have applied the knowledge acquired about web development, using React to build a modern and responsive interface. I also implemented key functionalities such as product management, shopping cart, and payment simulation, integrating good development practices and state management.
+I developed an e-commerce platform focused on selling video game consoles. The main goal is to offer users a smooth and attractive shopping experience, with access to a wide variety of consoles, detailed information about each product, and an easy and intuitive purchase process, using React to build a modern and responsive interface. I also implemented key functionalities such as product management, shopping cart, and payment simulation, integrating good development practices and state management.
 
 ## Instalation
 
